@@ -1,9 +1,9 @@
 package cucerdariancatalin.api.error
 
 sealed class ErrorEntity(val message: String, val statusCode: String = "") {
-    object Network : ErrorEntity(message = "Erro ao se conectar com o servidor.")
-    object NotFound : ErrorEntity(message = "Não encontrado.", statusCode = "404")
-    object AccessDenied : ErrorEntity(message = "Acesso negado.", statusCode = "401")
-    object ServiceUnavailable : ErrorEntity(message = "Serviço inválido.", statusCode = "503")
-    object Unknown : ErrorEntity("Erro desconhecido.")
+    object Network : ErrorEntity(message = "Error connecting to the server.")
+    object NotFound : ErrorEntity(message = "Not found.", statusCode = "404")
+    object AccessDenied : ErrorEntity(message = "Access denied.", statusCode = "401")
+    object ServiceUnavailable : ErrorEntity(message = "Invalid service.", statusCode = "503")
+    object Unknown : ErrorEntity("Unknown error.")
 }

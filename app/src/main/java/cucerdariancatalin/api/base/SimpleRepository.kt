@@ -21,7 +21,7 @@ abstract class SimpleRepository {
                 error?.let {
                     ResultApi.Error(it.message, it.statusCode)
                 } ?: run {
-                    ResultApi.Empty("Retorno vazio")
+                    ResultApi.Empty("Empty return")
                 }
             }
         } catch (e: Exception) {
