@@ -1,4 +1,7 @@
 package cucerdariancatalin.api.utils
 
-class AsyncStatus {
+enum class AsyncStatus {
+    RUNNING,
+    DONE,
+    ERROR
 }
